@@ -54,10 +54,10 @@ float TapeHeight = appHeight * 49 / paperHeight;
 fill(0, 0, 0);
 rect(TapeX, TapeY, TapeWidth, TapeHeight );
 
-float DivX = appWidth * 23 / paperWidth;
-float DivY = appHeight * 88 / paperHeight;
-float DivWidth = appWidth * 100 / paperWidth;
-float DivHeight = appHeight * 44 / paperHeight;
+float ProgressViewX = appWidth * 58 / paperWidth;
+float ProgressViewY = appHeight * 60 / paperHeight;
+float ProgressViewWidth = appWidth * 48.5/ paperWidth;
+float ProgressViewHeight = appHeight * 30 / paperHeight;
 
 fill(255, 255, 255);
-rect(DivX, DivY, DivWidth, DivHeight );
+rect(ProgressViewX, ProgressViewY, ProgressViewWidth, ProgressViewHeight );
