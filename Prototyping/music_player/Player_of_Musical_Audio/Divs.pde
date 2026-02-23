@@ -84,4 +84,4 @@ fill(255, 255, 255);
 rect(DivX, DivY, DivWidth, DivHeight);
 fill(0, 0, 0);
 textFont (Words);
-text("Albums", DivX, DivY);
+text("Albums", DivX+78, DivY+50);
