@@ -75,13 +75,24 @@ fill(0, 0, 0);
 textFont (Words); 
 text("Albums", AlbumsX+85, AlbumsY+100);
 
-float DivX = appWidth * 56/ paperWidth;
-float DivY = appHeight * 39/ paperHeight;
-float DivWidth = appWidth *23/ paperWidth;
-float DivHeight = appHeight * 14/ paperHeight;
+float AlbNameX = appWidth * 61/ paperWidth;
+float AlbNameY = appHeight * 45/ paperHeight;
+float AlbNameWidth = appWidth * 23/ paperWidth;
+float AlbNameHeight = appHeight * 14 / paperHeight;
 
 fill(255, 255, 255);
-rect(DivX, DivY, DivWidth, DivHeight);
+rect(AlbNameX, AlbNameY, AlbNameWidth, AlbNameHeight);
 fill(0, 0, 0);
 textFont (Words);
-text("Albums", DivX+78, DivY+50);
+text("-", AlbNameX+78, AlbNameY+50);
+
+float SongNameX = appWidth * 78/ paperWidth;
+float SongNameY = appHeight * 45/ paperHeight;
+float SongNameWidth = appWidth * 23/ paperWidth;
+float SongNameHeight = appHeight * 14 / paperHeight;
+
+fill(255, 255, 255);
+rect(SongNameX, SongNameY, SongNameWidth, SongNameHeight);
+fill(0, 0, 0);
+textFont (Words);
+text("-", SongNameX+78, SongNameY+50);
