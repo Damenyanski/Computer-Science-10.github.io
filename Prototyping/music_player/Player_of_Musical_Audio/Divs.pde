@@ -48,9 +48,9 @@ float StopHeight = appHeight * 18 / paperHeight;
 
 rect(StopX, StopY, StopWidth, StopHeight );
 
-float TapeX = appWidth * 39 / paperWidth;
+float TapeX = appWidth * 29 / paperWidth;
 float TapeY = appHeight * 45 / paperHeight;
-float TapeWidth = appWidth * 84 / paperWidth;
+float TapeWidth = appWidth * 104 / paperWidth;
 float TapeHeight = appHeight * 59 / paperHeight;
 
 fill(0, 0, 0);
@@ -75,24 +75,35 @@ fill(0, 0, 0);
 textFont (Words); 
 text("Albums", AlbumsX+85, AlbumsY+100);
 
-float AlbNameX = appWidth * 61/ paperWidth;
+float AlbNameX = appWidth * 58 / paperWidth;
 float AlbNameY = appHeight * 45/ paperHeight;
 float AlbNameWidth = appWidth * 23/ paperWidth;
 float AlbNameHeight = appHeight * 14 / paperHeight;
 
-fill(255, 255, 255);
-rect(AlbNameX, AlbNameY, AlbNameWidth, AlbNameHeight);
 fill(0, 0, 0);
+rect(AlbNameX, AlbNameY, AlbNameWidth, AlbNameHeight);
+fill(255, 255, 255);
 textFont (Words);
 text("-", AlbNameX+78, AlbNameY+50);
 
-float SongNameX = appWidth * 78/ paperWidth;
+float SongNameX = appWidth * 83.5 / paperWidth;
 float SongNameY = appHeight * 45/ paperHeight;
 float SongNameWidth = appWidth * 23/ paperWidth;
 float SongNameHeight = appHeight * 14 / paperHeight;
 
-fill(255, 255, 255);
-rect(SongNameX, SongNameY, SongNameWidth, SongNameHeight);
 fill(0, 0, 0);
+rect(SongNameX, SongNameY, SongNameWidth, SongNameHeight);
+fill(255, 255, 255);
 textFont (Words);
 text("-", SongNameX+78, SongNameY+50);
+
+float ArtistX = appWidth * 58 / paperWidth;
+float ArtistY = appHeight * 90 / paperHeight;
+float ArtistWidth = appWidth * 23/ paperWidth;
+float ArtistHeight = appHeight * 14 / paperHeight;
+
+fill(0, 0, 0);
+rect(ArtistX, ArtistY, ArtistWidth, ArtistHeight);
+fill(255, 255, 255);
+textFont (Words);
+text("Flip", ArtistX+78, ArtistY+50);
