@@ -8,13 +8,14 @@ int appHeight = displayHeight;
 //
 int paperWidth = 177;
 int paperHeight = 172;
+PFont Words;
+Words = loadFont("Garamond-Italic-20.vlw");
+
 
 float ShellX = appWidth * 18 / paperWidth;
 float ShellY = appHeight * 35/ paperHeight;
 float ShellWidth = appWidth * 124 / paperWidth;
 float ShellHeight = appHeight * 80 / paperHeight;
-PFont Words;
-Words = loadFont("Garamond-Italic-20.vlw");
 
 fill(164, 164, 255);
 rect(ShellX, ShellY, ShellWidth, ShellHeight );
@@ -80,7 +81,7 @@ float AlbNameY = appHeight * 45/ paperHeight;
 float AlbNameWidth = appWidth * 23/ paperWidth;
 float AlbNameHeight = appHeight * 14 / paperHeight;
 
-fill(0, 0, 0);
+fill(50, 50, 50);
 rect(AlbNameX, AlbNameY, AlbNameWidth, AlbNameHeight);
 fill(255, 255, 255);
 textFont (Words);
@@ -91,7 +92,7 @@ float SongNameY = appHeight * 45/ paperHeight;
 float SongNameWidth = appWidth * 23/ paperWidth;
 float SongNameHeight = appHeight * 14 / paperHeight;
 
-fill(0, 0, 0);
+fill(50, 50, 50);
 rect(SongNameX, SongNameY, SongNameWidth, SongNameHeight);
 fill(255, 255, 255);
 textFont (Words);
@@ -102,8 +103,32 @@ float ArtistY = appHeight * 90 / paperHeight;
 float ArtistWidth = appWidth * 23/ paperWidth;
 float ArtistHeight = appHeight * 14 / paperHeight;
 
-fill(0, 0, 0);
+fill(50, 50, 50);
 rect(ArtistX, ArtistY, ArtistWidth, ArtistHeight);
 fill(255, 255, 255);
 textFont (Words);
-text("Flip", ArtistX+78, ArtistY+50);
+text("-", ArtistX+78, ArtistY+50);
+
+float Wheel1X = appWidth * 48 / paperWidth;
+float Wheel1Y = appHeight * 75 / paperHeight;
+float Wheel1Width = appWidth * 15 / paperWidth;
+float Wheel1Height = appHeight * 23 / paperHeight;
+
+fill(255, 255, 255);
+ellipse(Wheel1X, Wheel1Y, Wheel1Width, Wheel1Height);
+
+float Wheel2X = appWidth * 116.5 / paperWidth;
+float Wheel2Y = appHeight * 75 / paperHeight;
+float Wheel2Width = appWidth * 15 / paperWidth;
+float Wheel2Height = appHeight * 23 / paperHeight;
+
+fill(255, 255, 255);
+ellipse(Wheel2X, Wheel2Y, Wheel2Width, Wheel2Height);
+
+float DecreasingTapeX = appWidth * 58 / paperWidth;
+float DecreasingTapeY = appHeight * 60 / paperHeight;
+float DecreasingTapeWidth = appWidth * 48.5*0.5 / paperWidth;
+float DecreasingTapeHeight = appHeight * 30 / paperHeight;
+
+fill(50, 25, 0);
+rect(DecreasingTapeX, DecreasingTapeY, DecreasingTapeWidth, DecreasingTapeHeight );
