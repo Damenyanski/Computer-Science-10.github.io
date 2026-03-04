@@ -12,18 +12,18 @@ float PlayWidth = appWidth * 31 / paperWidth;
 float PlayHeight = appHeight * 18 / paperHeight;
 //
 
-float PlayX1 = PlayX+PlayWidth*1/4;
-float PlayX2 = PlayX+PlayWidth*3/4;
-float PlayX3 = PlayX+PlayWidth*1/4;
-float PlayY1 = PlayY+PlayHeight*1/4;
-float PlayY2 = PlayY+PlayHeight*1/2;
-float PlayY3 = PlayY+PlayHeight*3/4;
+float PlayBX1 = PlayX+PlayWidth*1/4;
+float PlayBX2 = PlayX+PlayWidth*3/4;
+float PlayBX3 = PlayX+PlayWidth*1/4;
+float PlayBY1 = PlayY+PlayHeight*1/4;
+float PlayBY2 = PlayY+PlayHeight*1/2;
+float PlayBY3 = PlayY+PlayHeight*3/4;
 fill(50, 50, 50);
 rect(PlayX, PlayY, PlayWidth, PlayHeight );
 
 size(400, 400);
 fill(0, 255, 0);
-triangle(PlayX1, PlayY1, PlayX2, PlayY2, PlayX3, PlayY3);
+triangle(PlayBX1, PlayBY1, PlayBX2, PlayBY2, PlayBX3, PlayBY3);
 
 float RewindX = appWidth * 49 / paperWidth;
 float RewindY = appHeight * 115/ paperHeight;
@@ -33,13 +33,43 @@ float RewindHeight = appHeight * 18 / paperHeight;
 fill(50, 50, 50);
 rect(RewindX, RewindY, RewindWidth, RewindHeight );
 
-float RewindX1 = RewindX+RewindWidth*1/4;
-float RewindX2 = RewindX+RewindWidth*3/4;
-float RewindX3 = RewindX+RewindWidth*1/4;
-float RewindY1 = RewindY+RewindHeight*1/4;
-float RewindY2 = RewindY+RewindHeight*1/2;
-float RewindY3 = RewindY+RewindHeight*3/4;
+float RewindBX1 = RewindX+RewindWidth*1/2;
+float RewindBX2 = RewindX+RewindWidth*1/4;
+float RewindBX3 = RewindX+RewindWidth*1/2;
+float RewindBY1 = RewindY+RewindHeight*1/4;
+float RewindBY2 = RewindY+RewindHeight*1/2;
+float RewindBY3 = RewindY+RewindHeight*3/4;
 
 size(400, 400);
 fill(255, 255, 255);
-triangle(RewindX1, RewindY1, RewindX2, RewindY2, RewindX3, RewindY3);
+triangle(RewindBX1, RewindBY1, RewindBX2, RewindBY2, RewindBX3, RewindBY3);
+
+float Rewind2BX1 = RewindX+RewindWidth*3/4;
+float Rewind2BX2 = RewindX+RewindWidth*1/2;
+float Rewind2BX3 = RewindX+RewindWidth*3/4;
+float Rewind2BY1 = RewindY+RewindHeight*1/4;
+float Rewind2BY2 = RewindY+RewindHeight*1/2;
+float Rewind2BY3 = RewindY+RewindHeight*3/4;
+
+size(400, 400);
+fill(255, 255, 255);
+triangle(Rewind2BX1, Rewind2BY1, Rewind2BX2, Rewind2BY2, Rewind2BX3, Rewind2BY3);
+
+float FFX = appWidth * 80 / paperWidth;
+float FFY = appHeight * 115/ paperHeight;
+float FFWidth = appWidth * 31 / paperWidth;
+float FFHeight = appHeight * 18 / paperHeight;
+
+fill(50, 50, 50);
+rect(FFX, FFY, FFWidth, FFHeight );
+
+float FFBX1 = RewindX+RewindWidth*3/4;
+float FFBX2 = RewindX+RewindWidth*1/2;
+float FFBX3 = RewindX+RewindWidth*3/4;
+float FF2BY1 = RewindY+RewindHeight*1/4;
+float FFBY2 = RewindY+RewindHeight*1/2;
+float FFBY3 = RewindY+RewindHeight*3/4;
+
+size(400, 400);
+fill(255, 255, 255);
+triangle(Rewind2BX1, Rewind2BY1, Rewind2BX2, Rewind2BY2, Rewind2BX3, Rewind2BY3);
