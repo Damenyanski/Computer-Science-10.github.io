@@ -63,13 +63,40 @@ float FFHeight = appHeight * 18 / paperHeight;
 fill(50, 50, 50);
 rect(FFX, FFY, FFWidth, FFHeight );
 
-float FFBX1 = RewindX+RewindWidth*3/4;
-float FFBX2 = RewindX+RewindWidth*1/2;
-float FFBX3 = RewindX+RewindWidth*3/4;
-float FF2BY1 = RewindY+RewindHeight*1/4;
-float FFBY2 = RewindY+RewindHeight*1/2;
-float FFBY3 = RewindY+RewindHeight*3/4;
+float FFBX1 = FFX+FFWidth*1/4;
+float FFBX2 = FFX+FFWidth*1/2;
+float FFBX3 = FFX+FFWidth*1/4;
+float FFBY1 = FFY+FFHeight*1/4;
+float FFBY2 = FFY+FFHeight*1/2;
+float FFBY3 = FFY+FFHeight*3/4;
 
 size(400, 400);
 fill(255, 255, 255);
-triangle(Rewind2BX1, Rewind2BY1, Rewind2BX2, Rewind2BY2, Rewind2BX3, Rewind2BY3);
+triangle(FFBX1, FFBY1, FFBX2, FFBY2, FFBX3, FFBY3);
+
+float FF2BX1 = FFX+FFWidth*1/2;
+float FF2BX2 = FFX+FFWidth*3/4;
+float FF2BX3 = FFX+FFWidth*1/2;
+float FF2BY1 = FFY+FFHeight*1/4;
+float FF2BY2 = FFY+FFHeight*1/2;
+float FF2BY3 = FFY+FFHeight*3/4;
+
+size(400, 400);
+fill(255, 255, 255);
+triangle(FF2BX1, FF2BY1, FF2BX2, FF2BY2, FF2BX3, FF2BY3);
+
+float StopX = appWidth * 111 / paperWidth;
+float StopY = appHeight * 115/ paperHeight;
+float StopWidth = appWidth * 31 / paperWidth;
+float StopHeight = appHeight * 18 / paperHeight;
+
+fill(50, 50, 50);
+rect(StopX, StopY, StopWidth, StopHeight );
+
+float StopBX = StopX+StopWidth*1/4;
+float StopBY = StopY+StopHeight*1/4;
+float StopBWidth = StopWidth*1/2;
+float StopBHeight = StopHeight*1/2;
+
+fill(225,0,0);
+rect(StopBX, StopBY, StopBWidth, StopBHeight);
